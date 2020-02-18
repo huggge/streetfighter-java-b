@@ -35,13 +35,6 @@ public class AllFighters {
         }
     }
 
-    public void testShow () {
-        for(Fighter f : allFightersList) {
-            System.out.println(f);
-        }
-    }
-
-
     public String randomizeMotto() {
         List<String> mottos = new ArrayList<>();
         mottos.add("I am the greatest");
