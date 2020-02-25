@@ -1,6 +1,6 @@
 package fighters;
 
-public class Fighter implements IFighterMethods {
+public class Fighter extends IFighterMethods {
 
     private String name;
     private String motto;
@@ -85,13 +85,6 @@ public class Fighter implements IFighterMethods {
         this.alive = alive;
     }
 
-    public void attack(int strength) {
-        // Fill this
-    }
-
-    public void defend(int shield) {
-        // Fill this
-    }
 
     @Override
     public String toString() {

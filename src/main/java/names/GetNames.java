@@ -19,7 +19,7 @@ public class GetNames {
 
     public void getHTTP() {
         try {
-            URL url = new URL("https://uinames.com/api/?amount=9");
+            URL url = new URL("https://uinames.com/api/?amount=9&region=sweden");
             HttpURLConnection conn = (HttpURLConnection)url.openConnection();
             conn.setRequestMethod("GET");
             conn.connect();

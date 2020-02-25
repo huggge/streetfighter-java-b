@@ -4,6 +4,7 @@ import names.GetNames;
 import names.NameList;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -26,12 +27,17 @@ public class AllFighters {
         return allFightersList.get(i);
     }
 
+    public void shuffleSeed() {
+        Collections.shuffle(allFightersList);
+    }
+
 
     public void populateAllfighters() {
         getNames.getHTTP();
         List<NameList> nameList = getNames.getNameList();
         for(int i = 1; i<9; i++) {
-            allFightersList.add(new Fighter(nameList.get(i).toString(), randomizeMotto(), randomizeInteger(), randomizeInteger(), randomizeInteger(), randomizeInteger()));
+            // Ändra till nameList.get(i).toString()
+            allFightersList.add(new Fighter(getUniqeName(i), randomizeMotto(), randomizeInteger(), randomizeInteger(), randomizeInteger(), randomizeInteger()));
         }
     }
 
@@ -52,5 +58,20 @@ public class AllFighters {
     public int randomizeInteger() {
         return rand.nextInt(8);
     }
+
+    public String getUniqeName(int i) {
+        List<String> names = new ArrayList<>();
+        names.add("Kreuger");
+        names.add("Krister");
+        names.add("Tony");
+        names.add("Jackie");
+        names.add("Mathias");
+        names.add("Maja");
+        names.add("Molly");
+        names.add("Eva");
+        names.add("Kerstin");
+        return names.get(i);
+    }
+
 
 }
