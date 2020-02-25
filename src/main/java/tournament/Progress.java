@@ -7,6 +7,8 @@ import java.util.List;
 
 public class Progress {
 
+    // Testing git in intelliJ bla bla
+
     private List<Fighter> semiList = new ArrayList<>();
 
     public List<Fighter> getSemiList() {
