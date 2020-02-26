@@ -12,13 +12,9 @@ public class Match {
     private int fighterOneRounds;
     private int fighterTwoRounds;
     private int rounds;
-
-    public Fighter getWinner() {
-        return winner;
-    }
-
     Fighter winner;
     Scanner input = new Scanner(System.in);
+
 
 
     public Match(Fighter fighterOne, Fighter fighterTwo) {
@@ -26,7 +22,9 @@ public class Match {
         this.fighterTwo = fighterTwo;
     }
 
-
+    public Fighter getWinner() {
+        return winner;
+    }
 
     public void startMatch() {
         System.out.println("Tryck Enter för att starta matchen");

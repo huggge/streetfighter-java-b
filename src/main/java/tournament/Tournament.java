@@ -21,7 +21,7 @@ public class Tournament {
         System.out.println("Match 3: " + allFighters.getIndividualfighter(4).getName() + " möter " + allFighters.getIndividualfighter(5).getName());
         System.out.println("Match 4: " + allFighters.getIndividualfighter(6).getName() + " möter " + allFighters.getIndividualfighter(7).getName());
         System.out.println("Tryck Enter för att starta turneringen.");
-            input.nextLine();
+        input.nextLine();
             startFights();
 
     }
@@ -31,8 +31,8 @@ public class Tournament {
             Match match = new Match(allFighters.getIndividualfighter(i), allFighters.getIndividualfighter(i+1));
             match.startMatch();
             progress.setSemiList(match.getWinner());
-            for(Fighter f:progress.getSemiList()){
-                System.out.println(f);
+                for(Fighter f:progress.getSemiList()){
+                    System.out.println(f);
             }
         }
 
