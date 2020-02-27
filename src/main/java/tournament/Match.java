@@ -27,8 +27,7 @@ public class Match {
     }
 
     public void startMatch() {
-        System.out.println("Tryck Enter för att starta matchen");
-        input.nextLine();
+        System.out.println("===================================================");
         System.out.println("Matchen mellan " + fighterOne.getName() + " och " + fighterTwo.getName() + "  har påbörjats!");
         System.out.println();
         matchRound();
@@ -39,9 +38,13 @@ public class Match {
         rounds += 1;
         System.out.println("Runda " + rounds + " av 3");
 
+        System.out.println("===================================================");
+
         // Display stats before fight.
         System.out.println(fighterOne.getName() + " har " + fighterOne.getHealth() + " i hp.");
         System.out.println(fighterTwo.getName() + " har " + fighterTwo.getHealth() + " i hp.");
+
+        System.out.println("===================================================");
 
         // Attack 1
         System.out.println(fighterOne.getName() + " attackerar " + fighterTwo.getName());
@@ -50,7 +53,7 @@ public class Match {
         fighterTwo.setHealth(fighterTwo.getHealth()-attackValueOne);
         System.out.println(fighterTwo.getName() + " hp är: " +fighterTwo.getHealth());
 
-
+        System.out.println("===================================================");
 
         // Attack 2
         System.out.println(fighterTwo.getName() + " attackerar " + fighterOne.getName());
@@ -59,15 +62,21 @@ public class Match {
         fighterOne.setHealth(fighterOne.getHealth()-attackValueTwo);
         System.out.println(fighterOne.getName() + " hp är: " +fighterOne.getHealth());
 
+        System.out.println("===================================================");
+
 
         if(attackValueOne > attackValueTwo) {
             System.out.println(fighterOne.getName() + " Vann rundan!");
             fighterOneRounds += 1;
+            System.out.println("===================================================");
+
         }
 
         if(attackValueTwo > attackValueOne) {
             System.out.println(fighterTwo.getName() + " Vann rundan!");
             fighterTwoRounds += 1;
+            System.out.println("===================================================");
+
         }
 
         if(rounds == 3) {
@@ -75,11 +84,15 @@ public class Match {
             if(fighterOneRounds >= 2) {
                 System.out.println(fighterOne.getName() + " Vann!");
                 System.out.println("Vinnarens motto: " + fighterOne.getMotto());
+                System.out.println("===================================================");
+                fighterOne.setHealth(100);
                 winner = fighterOne;
             }
             if(fighterTwoRounds >= 2) {
                 System.out.println(fighterTwo.getName() + " Vann!");
                 System.out.println("Vinnarens motto: " +fighterTwo.getMotto());
+                System.out.println("===================================================");
+                fighterTwo.setHealth(100);
                 winner = fighterTwo;
             }
         }
