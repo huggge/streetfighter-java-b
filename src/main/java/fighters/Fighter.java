@@ -88,6 +88,6 @@ public class Fighter extends IFighterMethods {
 
     @Override
     public String toString() {
-        return "Fightername: " + name + " Fighterhealth: " + health + " Motto: " + motto + " Strength: " + strength + " Speed: " + speed + " Shield: " + shield + " Level: " + level;
+        return name + " med mottot: " + motto + "!";
     }
 }

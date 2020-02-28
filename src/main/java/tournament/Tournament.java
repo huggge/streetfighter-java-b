@@ -9,71 +9,90 @@ import java.util.Scanner;
 
 public class Tournament {
     AllFighters allFighters = new AllFighters();
-
     Progress progress = new Progress();
     private Scanner input = new Scanner(System.in);
 
-    public void displaySeed() {
+    public void initiateTournament() {
         allFighters.populateAllfighters();
         allFighters.shuffleSeed();
+        displaySeed();
+        startGroupFights();
+    }
+
+    public void displaySeed() {
+
+        System.out.println("Välkommen till Fighter Tournament!");
+        System.out.println();
         System.out.println("Här är lottningen!");
         System.out.println("Match 1: " + allFighters.getIndividualfighter(0).getName() + " möter " + allFighters.getIndividualfighter(1).getName());
         System.out.println("Match 2: " + allFighters.getIndividualfighter(2).getName() + " möter " + allFighters.getIndividualfighter(3).getName());
         System.out.println("Match 3: " + allFighters.getIndividualfighter(4).getName() + " möter " + allFighters.getIndividualfighter(5).getName());
         System.out.println("Match 4: " + allFighters.getIndividualfighter(6).getName() + " möter " + allFighters.getIndividualfighter(7).getName());
         System.out.println("===================================================");
-        startFights();
-
     }
 
     public void startNextRound() {
         System.out.println();
-        System.out.println("Tryck Enter för att starta nästa omgång.");
+        System.out.print("Tryck Enter för att gå vidare...");
         input.nextLine();
     }
 
-    public void startFights() {
+    public void startGroupFights() {
+        System.out.println("STARTAR KVARTSFINALEN!");
         for (int i = 0; i < 8; i += 2) {
             startNextRound();
             Match match = new Match(allFighters.getIndividualfighter(i), allFighters.getIndividualfighter(i + 1));
             match.startMatch();
-            System.out.println();
-            System.out.println("===================================================");
-            System.out.println("Fighters som är vidare till nästa omgång: ");
-            System.out.println("----------------------------------------");
-            progress.setSemiList(match.getWinner());
-            for (Fighter f : progress.getSemiList()) {
-                System.out.println(f);
-            }
-            System.out.println("===================================================");
-
+            listSemiFinalists(match);
         }
-
         startNextRound();
-        System.out.println("Startar SEMIFINALEN!!!");
+        startSemiFights();
+    }
+
+    public void startSemiFights() {
+        System.out.println();
+        System.out.println("STARTAR SEMIFINALEN!");
         for (int i = 0; i < 4; i += 2) {
+            startNextRound();
             Match match = new Match(progress.getIndividualsemiFighter(i), progress.getIndividualsemiFighter(i + 1));
             match.startMatch();
-            System.out.println("===================================================");
-            System.out.println("Fighters som är vidare till finalen: ");
-            System.out.println("-----------------------------------");
-
-            progress.setFinalList(match.getWinner());
-            for (Fighter f : progress.getFinalList()) {
-                System.out.println(f);
-            }
-
-            startNextRound();
-
+            listFinalists(match);
         }
+        startNextRound();
+        startFinalFight();
+    }
 
-//        Final
-        System.out.println("Startar FINALEN!!!");
+    public void startFinalFight() {
+        System.out.println("STARTAR FINALEN!");
         Match match = new Match(progress.getIndividualFinalFighter(0), progress.getIndividualFinalFighter(1));
         match.startMatch();
         System.out.println("===================================================");
-        System.out.println("Vinnaren av turneringen är: " + match.getWinner().getName());
+        System.out.println("VINNARE AV TURNERINGEN ÄR: " + match.getWinner().getName().toUpperCase() + "! grattis hihi.");
         addToDb(match.getWinner().getName());
+    }
+
+    public void listSemiFinalists(Match match) {
+        System.out.println("===================================================");
+        System.out.println("Fighters som är vidare till semifinalen: ");
+        System.out.println("----------------------------------------");
+        progress.setSemiList(match.getWinner());
+        for (Fighter f : progress.getSemiList()) {
+            System.out.println(f);
+        }
+        System.out.println("----------------------------------------");
+        System.out.println("===================================================");
+    }
+
+    public void listFinalists(Match match) {
+        System.out.println("===================================================");
+        System.out.println("Fighters som är vidare till finalen: ");
+        System.out.println("-----------------------------------");
+        progress.setFinalList(match.getWinner());
+        for (Fighter f : progress.getFinalList()) {
+            System.out.println(f);
+        }
+        System.out.println("----------------------------------------");
+        System.out.println("===================================================");
     }
 
     public void addToDb(String winner) {

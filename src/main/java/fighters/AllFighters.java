@@ -37,7 +37,7 @@ public class AllFighters {
         List<NameList> nameList = getNames.getNameList();
         for(int i = 1; i<9; i++) {
             // Ändra till nameList.get(i).toString()
-            allFightersList.add(new Fighter(getUniqeName(i), randomizeMotto(), randomizeInteger(), randomizeInteger(), randomizeInteger(), randomizeInteger()));
+            allFightersList.add(new Fighter(nameList.get(i).toString(), randomizeMotto(), randomizeInteger(), randomizeInteger(), randomizeInteger(), randomizeInteger()));
         }
     }
 

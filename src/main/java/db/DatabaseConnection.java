@@ -56,15 +56,13 @@ public class DatabaseConnection {
 
     public void insertWinner(String name) {
         PreparedStatement preStmt;
-        {
-            try {
-                preStmt = connection.prepareStatement("insert into wins(fightername) " +
-                        "values(?)");
-                preStmt.setString(1, name);
-                preStmt.executeUpdate();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+        try {
+            preStmt = connection.prepareStatement("insert into wins(fightername) " +
+                    "values(?)");
+            preStmt.setString(1, name);
+            preStmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
 
     }
