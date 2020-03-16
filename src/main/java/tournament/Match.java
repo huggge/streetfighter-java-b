@@ -1,9 +1,6 @@
 package tournament;
 
-import fighters.AllFighters;
 import fighters.Fighter;
-
-import java.util.Random;
 import java.util.Scanner;
 
 public class Match {
@@ -105,9 +102,15 @@ public class Match {
         }
         if(rounds != 3) {
             System.out.println("Tryck Enter för att starta nästa runda!");
-            input.nextLine();
+            startNextRound();
             matchRound();
         }
 
+    }
+
+    public void startNextRound() {
+        System.out.println();
+        System.out.print("Tryck Enter för att gå vidare...");
+        input.nextLine();
     }
 }

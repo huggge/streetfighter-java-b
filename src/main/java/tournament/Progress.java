@@ -7,7 +7,6 @@ import java.util.List;
 
 public class Progress {
 
-    // Testing git in intelliJ bla bla idjut
 
     private List<Fighter> semiList = new ArrayList<>();
     private List<Fighter> finalList = new ArrayList<>();

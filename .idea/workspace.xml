@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16ab545a-509b-470e-90dc-00f40c9e3f19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DatabaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fighters/AllFighters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fighters/AllFighters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fighters/Fighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fighters/Fighter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tournament/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tournament/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tournament/Progress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tournament/Progress.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tournament/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tournament/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/streetfighter-java-b.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/DatabaseConnection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fighters/AllFighters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fighters/AllFighters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fighters/Fighter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fighters/Fighter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tournament/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tournament/Match.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tournament/Tournament.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tournament/Tournament.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +31,9 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Arquillian JUnit Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -46,28 +50,44 @@
     </option>
   </component>
   <component name="ProjectId" id="1Xl3FTDfOmpBxam057ECG3ld2Oq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.4816092" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tournament" />
+      <recent name="names" />
+      <recent name="fighters" />
+      <recent name="db" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="streetfighter-java-b" />
@@ -75,9 +95,69 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in streetfighter-java-b" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="streetfighter-java-b" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatchTest.getWinnerAfterMatchIsNotNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="streetfighter-java-b" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tournament.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tournament" />
+      <option name="MAIN_CLASS_NAME" value="tournament.MatchTest" />
+      <option name="METHOD_NAME" value="getWinnerAfterMatchIsNotNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatchTest.getWinnerBeforeMatchIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="streetfighter-java-b" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tournament.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tournament" />
+      <option name="MAIN_CLASS_NAME" value="tournament.MatchTest" />
+      <option name="METHOD_NAME" value="getWinnerBeforeMatchIsNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatchTest.winnersHPBackTo100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="streetfighter-java-b" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tournament.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tournament" />
+      <option name="MAIN_CLASS_NAME" value="tournament.MatchTest" />
+      <option name="METHOD_NAME" value="winnersHPBackTo100" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in streetfighter-java-b" />
+        <item itemvalue="JUnit.MatchTest.winnersHPBackTo100" />
+        <item itemvalue="JUnit.MatchTest.getWinnerAfterMatchIsNotNull" />
+        <item itemvalue="JUnit.MatchTest.getWinnerBeforeMatchIsNull" />
       </list>
     </recent_temporary>
   </component>
@@ -91,8 +171,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581606749943</updated>
+      <workItem from="1584368860048" duration="14031000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -106,5 +190,47 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="872" y="358" key="#Project_Structure" timestamp="1584372284537">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="358" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1584372284537" />
+    <state x="755" y="395" key="#com.intellij.ide.util.MemberChooser" timestamp="1584376965435">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="755" y="395" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1584376965435" />
+    <state width="2517" height="369" key="GridCell.Tab.0.bottom" timestamp="1584387281725">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1584387281725" />
+    <state width="2517" height="369" key="GridCell.Tab.0.center" timestamp="1584387281725">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="369" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1584387281725" />
+    <state width="2517" height="369" key="GridCell.Tab.0.left" timestamp="1584387281724">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="369" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1584387281724" />
+    <state width="2517" height="369" key="GridCell.Tab.0.right" timestamp="1584387281725">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="369" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1584387281725" />
+    <state x="852" y="130" key="SettingsEditor" timestamp="1584371046263">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="852" y="130" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1584371046263" />
+    <state x="1076" y="449" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584370999076">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1076" y="449" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1400@0.0.2560.1400" timestamp="1584370999076" />
+    <state x="388" y="511" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584387078693">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="388" y="511" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1584387078693" />
+    <state x="684" y="463" key="new project wizard" timestamp="1584370570674">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="684" y="463" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1584370570674" />
   </component>
 </project>

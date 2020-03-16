@@ -64,6 +64,8 @@ public class Tournament {
 
     public void startFinalFight() {
         System.out.println("STARTAR FINALEN!");
+        System.out.println();
+        startNextRound();
         Match match = new Match(progress.getIndividualFinalFighter(0), progress.getIndividualFinalFighter(1));
         match.startMatch();
         System.out.println("===================================================");

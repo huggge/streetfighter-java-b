@@ -15,12 +15,8 @@ public class AllFighters {
     Random rand = new Random();
     private List<Fighter> allFightersList = new ArrayList<>();
 
-    public void setFighterListHealth(int id, int hp) {
-        allFightersList.get(id).setHealth(hp);
-    }
-
-    public List<Fighter> getAllFightersList() {
-        return allFightersList;
+    public int getAllFighterListSize() {
+        return allFightersList.size();
     }
 
     public Fighter getIndividualfighter(int i) {
@@ -54,6 +50,7 @@ public class AllFighters {
         int i = rand.nextInt(8);
         return mottos.get(i);
     }
+
 
     public int randomizeInteger() {
         return rand.nextInt(8);
